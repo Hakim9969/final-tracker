@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0d1323;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+
+} 
+.container > .time-periods{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    width: 260px;
+    gap: 2rem; 
+    margin-top: -2rem;
+}
+.container > .time-periods > .profile{
+    display: flex;
+    flex-direction: column;
+    background-color: #5746ea;
+    border-radius: 10px;
+    padding: 2rem;
+    align-items: flex-start;
+}
+.container > .time-periods > .profile > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.container > .time-periods > .text{
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1e46;
+    margin-top: -2rem;
+    gap: 1rem;
+    padding: 1rem;
+    color: rgb(141, 148, 148);
+    height: 20rem;
+    border-radius: 10px;
+}
+.container > .time-periods > .text > span:nth-child(2){
+    color: white;
+}
+.container > .right{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    flex: 1;
+
+}
+.container > .right > div{
+    background-color: #1d204b;
+    padding: 2rem;
+    border-radius: 10px;
+}
+.container > .right > div > .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container > .right > div > .top > img{
+    width: 30px;
+    height: 10px;
+}
+.container > .right > div > .bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+.container > .right > div > .bottom > span:nth-child(2){
+    color: rgb(141, 148, 148);
+}
