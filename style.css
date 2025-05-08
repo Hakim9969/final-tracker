@@ -75,10 +75,16 @@ body {
     width: 30px;
     height: 10px;
 }
+.container > .right > div > .top > h1{
+    font-size: 20px;
+}
 .container > .right > div > .bottom{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
+}
+.container > .right > div > .bottom > span:nth-child(1){
+    font-size: 50px;
 }
 .container > .right > div > .bottom > span:nth-child(2){
     color: rgb(141, 148, 148);
