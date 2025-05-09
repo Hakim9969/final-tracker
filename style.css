@@ -5,87 +5,165 @@
 
 body {
     background-color: #0d1323;
-    color: aliceblue;
+    color: #faf7fa;
+    max-width: 1024px;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .container {
-    display: flex;
-    gap: 2rem;
-    padding: 2rem;
-    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 23px;
+    margin-top: 100px;
+    padding-left: 100px;
+}
 
-} 
-.container > .time-periods{
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    padding: 2rem 1.5rem;
-    width: 260px;
-    gap: 2rem; 
-    margin-top: -2rem;
+.profile {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 16px;
+    grid-row: span 2;
+    overflow: hidden;
+    width: 250px;
+    margin-bottom: 30px;
 }
-.container > .time-periods > .profile{
-    display: flex;
-    flex-direction: column;
-    background-color: #5746ea;
-    border-radius: 10px;
-    padding: 2rem;
-    align-items: flex-start;
-}
-.container > .time-periods > .profile > img{
-    width: 50px;
-    height: 50px;
+
+.profile img {
+    height: 72px;
+    width: 72px;
     border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 24px;
 }
-.container > .time-periods > .text{
+
+.user-info {
+    background-color: hsl(245, 80%, 60%);
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+
+.user-txt {
+    padding-bottom: 40px;
+}
+
+.user-txt>p {
+    color: hsl(236, 100%, 87%);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.user-txt>h1 {
+    font-size: 30px;
+    font-weight: 300px;
+    line-height: 1.2;
+}
+
+.text-dates {
+    padding: 24px 30px;
     display: flex;
     flex-direction: column;
-    background-color: #1b1e46;
-    margin-top: -2rem;
-    gap: 1rem;
-    padding: 1rem;
-    color: rgb(141, 148, 148);
-    height: 20rem;
-    border-radius: 10px;
+    gap: 15px;
 }
-.container > .time-periods > .text > span:nth-child(2){
+
+.text-dates>h2 {
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500px;
+    cursor: pointer;
+    color: hsl(235, 45%, 60%);
+}
+
+.text-dates>#active {
     color: white;
 }
-.container > .right{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    flex: 1;
 
+.card {
+    position: relative;
+    width: 220px;
+    border-radius: 12px;
+    overflow: hidden;
 }
-.container > .right > div{
-    background-color: #1d204b;
-    padding: 2rem;
-    border-radius: 10px;
+
+.image-bg {
+    position: relative;
+    overflow: hidden;
+    height: 48px;
 }
-.container > .right > div > .top{
+
+.btn-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    right: 18px;
+    top: -15px;
+    height: 55px;
+}
+
+.contents {
+    background-color: hsl(235, 45%, 20%);
+    padding: 20px 25px;
+    border-radius: 15px;
+    position: relative;
+    top: -15px;
+    height: 18vh;
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 20px;
 }
-.container > .right > div > .top > img{
-    width: 30px;
-    height: 10px;
-}
-.container > .right > div > .top > h1{
+
+.title {
     font-size: 20px;
 }
-.container > .right > div > .bottom{
+
+.body-card {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    gap: 15px;
+
 }
-.container > .right > div > .bottom > span:nth-child(1){
-    font-size: 50px;
+
+.hrs {
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.1;
 }
-.container > .right > div > .bottom > span:nth-child(2){
-    color: rgb(141, 148, 148);
+
+.previous-hrs {
+    color: hsl(236, 100%, 87%);
+    font-size: 14px;
+    font-weight: 300px;
+}
+
+.work .image-bg {
+    background-color: hsl(15, 100%, 70%);
+}
+.play .image-bg {
+    background-color: hsl(195, 75%, 63%);
+}
+.study .image-bg {
+    background-color: hsl(348, 100%, 68%);
+}
+.exercise .image-bg {
+    background-color: hsl(145, 58%, 55%);
+}
+.social .image-bg {
+    background-color: hsl(263, 63%, 51%);
+}
+.selfcare .image-bg {
+    background-color: hsl(43, 84%, 65%);
 }
